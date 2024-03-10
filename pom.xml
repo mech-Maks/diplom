@@ -28,7 +28,9 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+            <version>3.2.3</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -43,31 +45,6 @@
             <version>${lombok.version}</version>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>issuing.repository</id>
-            <url>https://nexus.tcsbank.ru/repository/mvn-issuing</url>
-        </repository>
-        <repository>
-            <id>tinkoff.snapshots</id>
-            <url>https://nexus.tcsbank.ru/repository/mvn-inhouse-snapshots</url>
-        </repository>
-        <repository>
-            <id>proxy-jaspersoft</id>
-            <url>https://nexus.tcsbank.ru/repository/mvn-proxy-jaspersoft/</url>
-        </repository>
-        <repository>
-            <id>proxy-maven-central</id>
-            <url>https://nexus.tcsbank.ru/repository/mvn-maven-proxy/</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>tcs-central</id>
-            <url>https://nexus.tcsbank.ru/repository/mvn-maven-proxy</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <build>
         <plugins>
