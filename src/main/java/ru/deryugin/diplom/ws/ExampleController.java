@@ -14,7 +14,6 @@ public class ExampleController {
 
     @GetMapping
     public Long exampleMethod() throws Exception {
-        exampleService.serve();
-        return 1L;
+        return exampleService.serve();
     }
 }

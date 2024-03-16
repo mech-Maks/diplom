@@ -6,11 +6,13 @@ import ru.deryugin.diplom.annotation.LogExecutionTime;
 
 @Service
 public class ExampleService implements ExampleInterface {
-//    @LogExecutionTime
-//    @CheckPermission(isAvailable = true)
-    public void serve() throws InterruptedException {
+
+    @LogExecutionTime
+    @CheckPermission(isAvailable = true)
+    public Long serve() throws InterruptedException {
         System.out.println("Started execution");
-        Thread.sleep(2000);
+        Thread.sleep(500);
         System.out.println("Finished execution");
+        return 1L;
     }
 }

@@ -1,6 +1,7 @@
 package ru.deryugin.diplom.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.AdviceName;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
@@ -33,16 +34,5 @@ public class ExampleAspect {
         }
 
         return null;
-    }
-
-
-    @Pointcut(value = "execution(* ru.deryugin.diplom.service.ExampleInterface.serve(..))")
-    public void pointcutForServe() {
-    }
-
-    @Around("pointcutForServe()")
-    public Object catchSaveSingleEnvelope(ProceedingJoinPoint joinPoint) throws Throwable {
-        System.out.println("kek");
-        return joinPoint.proceed();
     }
 }
