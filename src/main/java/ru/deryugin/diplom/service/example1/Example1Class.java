@@ -27,6 +27,7 @@ public class Example1Class implements Example1Interface {
     public void check() {
         interfaceMethodWithLinkedAop("String");
         System.out.println("===========================================");
+
         interfaceMethodWithLinkedAop(1);
     }
 }
